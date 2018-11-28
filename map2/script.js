@@ -73,11 +73,15 @@ function slide(){
   if(index==0){
     document.getElementById("sidebar").style.backgroundColor = "#EDF0F5"
     document.getElementById("sidebar").style.width = "250px"
+    document.getElementById("someText").innerHTML = "<h3>本網頁由 <a href="https://junyou.tw" target="_blank">陳俊佑</a> 製作</h3><br> 未經同意不可用於任何商業用途，違者必究。"
+    document.getElementById("info").innerHTML = "台中教育大學｜數位內容科技學系"
     index = index+1
   }
   else if(index==1){
     document.getElementById("sidebar").style.backgroundColor = "white"
     document.getElementById("sidebar").style.width = "40px"
+    document.getElementById("someText").innerHTML = ""
+    document.getElementById("info").innerHTML = ""
     index = index-1
   }
 }

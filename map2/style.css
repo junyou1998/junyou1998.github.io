@@ -83,3 +83,19 @@ body,html{
   width: 35px;
   cursor: pointer;
 }
+#someText{
+  padding: 20px;
+  padding-top: 90px;
+  color: #5670A1;
+}
+#info{
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  color: #5670A1;
+}
+a{
+  text-decoration: none;
+  color: #3366FF;
+}
