@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            width: 100%;
+            height: 500vh;
+            background-color: #000;
+        }
+
+        #container {
+            width: 700px;
+            height: 700px;
+            overflow: hidden;
+            background-color: #000;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        div {
+            font-size: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="trigger"></div>
+    <div id='container'></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://labs.nearpod.com/bodymovin/demo/bonsai/bodymovin.js"></script>
+    <script>
+        var theWindow = $(window);
+        var winHeight = theWindow.height();
+        var animDuration = winHeight * 4;
+        var animData = {
+            container: document.getElementById('container'),
+            renderer: 'canvas',
+            loop: false,
+            autoplay: false,
+            path: 'data.json'
+        };
+        var anim = bodymovin.loadAnimation(animData);
+
+        $(window).scroll(function () {
+            animatebodymovin(animDuration, anim);
+        });
+
+        function animatebodymovin(duration, animObject) {
+
+            var scrollPosition = theWindow.scrollTop();
+            var maxFrames = animObject.totalFrames;
+            var frame = (maxFrames / 100) * (scrollPosition / (duration / 98));
+
+            animObject.goToAndStop(frame, true);
+
+        }
+    </script>
+</body>
+
+</html>
