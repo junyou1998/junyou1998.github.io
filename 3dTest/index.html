@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         body,
         html {
@@ -11,6 +13,13 @@
             width: 100%;
             height: 500vh;
             background-color: #000;
+            color: white;
+
+        }
+
+        .container {
+            position: relative;
+            z-index: 100;
         }
 
         #container {
@@ -24,6 +33,7 @@
             top: 0;
             bottom: 0;
             margin: auto;
+            z-index: 0;
         }
 
         div {
@@ -33,8 +43,24 @@
 </head>
 
 <body>
+    <div class="container">
+        <h1>hello</h1>
+        <div class="row">
+            <div class="col-6"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad velit id dolor hic saepe optio quos reiciendis ipsa eaque porro. Voluptatibus non obcaecati labore, vero exercitationem nisi minima aliquam.</h1>
+        </div>
+        </div>
+        
+    </div>
+
     <div id="trigger"></div>
     <div id='container'></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://labs.nearpod.com/bodymovin/demo/bonsai/bodymovin.js"></script>
     <script>
@@ -46,7 +72,7 @@
             renderer: 'canvas',
             loop: false,
             autoplay: false,
-            path: 'data.json'
+            path: 'data1.json'
         };
         var anim = bodymovin.loadAnimation(animData);
 
