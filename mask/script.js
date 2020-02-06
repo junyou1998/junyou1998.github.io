@@ -41,7 +41,3 @@ navigator.geolocation.getCurrentPosition(function (pos) {
         })
 })
 
-$('#fresh').click(function () {
-    
-
-})
