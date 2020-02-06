@@ -3,7 +3,12 @@ var userLat, userLong
 navigator.geolocation.getCurrentPosition(function (pos) {
     userLat = pos.coords.latitude
     userLong = pos.coords.longitude
-
+var pinIcon = L.icon({
+    iconUrl: 'pin.png',
+    iconSize: [30,35],
+    iconAnchor:   [14,35],
+    popupAnchor:  [0, -35]
+})
 
 
     var map = L.map('map').setView([userLat, userLong], 15);
@@ -30,7 +35,7 @@ navigator.geolocation.getCurrentPosition(function (pos) {
                 console.log(element.properties.mask_adult)
                 // console.log(distance)
                 if(distance<nearby){
-                    L.marker([lat, long]).addTo(map)
+                    L.marker([lat, long],{icon: pinIcon}).addTo(map)
                     .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://www.google.com.tw/maps/place/${name}">${address}</a><br>更新時間: ${update}`)
 
                 }
