@@ -11,7 +11,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 L.control.zoom({
-    position: 'bottomright'
+    position: 'topright'
 }).addTo(map);
 
 var pinIcon = L.divIcon({
