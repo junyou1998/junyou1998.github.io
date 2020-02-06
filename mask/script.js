@@ -22,13 +22,16 @@ navigator.geolocation.getCurrentPosition(function (pos) {
                 var address = element.properties.address
                 var adult = element.properties.mask_adult
                 var child = element.properties.mask_child
+                var update = element.properties.updated
                 let distance = Math.sqrt(Math.pow(userLat - lat,2)+Math.pow(userLong - long,2))
-
+                if(update == ''){
+                    update = "未更新"
+                }
                 console.log(element.properties.mask_adult)
                 // console.log(distance)
                 if(distance<nearby){
                     L.marker([lat, long]).addTo(map)
-                    .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://www.google.com.tw/maps/place/${name}">${address}<a>`)
+                    .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://www.google.com.tw/maps/place/${name}">${address}</a><br>更新時間: ${update}`)
 
                 }
                 else{
