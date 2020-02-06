@@ -5,8 +5,13 @@ let apiUrl = 'https://raw.githubusercontent.com/kiang/pharmacies/master/json/poi
 
 
 
-var map = L.map('map',{attributionControl: false}).setView([24.1618329, 120.6446744], 15);
+var map = L.map('map',{attributionControl: false,zoomControl: false}).setView([24.1618329, 120.6446744], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+}).addTo(map);
+
+
+L.control.zoom({
+    position: 'bottomright'
 }).addTo(map);
 
 var pinIcon = L.divIcon({
