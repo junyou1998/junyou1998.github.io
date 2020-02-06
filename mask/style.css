@@ -45,8 +45,8 @@ body {
   background-color: #00c853;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 3px #009624;
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 3px #009624;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #009624;
+          box-shadow: inset 0px 0px 0px 3px #009624;
 }
 
 .pin:after {
@@ -61,14 +61,14 @@ body {
 
 .pin.empty {
   background-color: #f50057;
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 3px #bb002f;
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 3px #bb002f;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #bb002f;
+          box-shadow: inset 0px 0px 0px 3px #bb002f;
 }
 
 .pin.danger {
   background-color: #ffb300;
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 3px #c68400;
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 3px #c68400;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #c68400;
+          box-shadow: inset 0px 0px 0px 3px #c68400;
 }
 
 .leaflet-div-icon {

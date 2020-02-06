@@ -48,12 +48,12 @@ function getData(userLat,userLong){
                 var update = proper.updated
 
                 let distance = Math.sqrt(Math.pow(userLat - lat, 2) + Math.pow(userLong - long, 2))
-
+                // markers.clearLayers();
                 if (update == '') {
                     update = "未更新"
                 }
                 if (distance < nearby) {
-                    console.log(adult+child)
+                    // console.log(adult+child)
                     if(adult + child == 0){
                         L.marker([lat, long], {
                             icon: pinIcon_empty
@@ -97,6 +97,19 @@ navigator.geolocation.getCurrentPosition(function (pos) {
             userLat = pos.coords.latitude
             userLong = pos.coords.longitude
             map.panTo(new L.LatLng(userLat,userLong));
+            
+            getData(userLat,userLong)
         })
     })
 })
+
+
+
+setInterval(function(){
+    navigator.geolocation.getCurrentPosition(function (pos) {
+        userLat = pos.coords.latitude
+        userLong = pos.coords.longitude
+        map.panTo(new L.LatLng(userLat,userLong));
+        getData(userLat,userLong)
+    })
+},60000)
