@@ -3,7 +3,7 @@ var userLat, userLong
 let apiUrl = 'https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json?fbclid=IwAR2c7Nn8AHmd6cOhhFvs7bRxNA62G2Dc3F9p7iuPdkZ3-LA3Rea9m-oz2VI'
 
 
-
+location.href = "https://mask.junyou.tw"
 
 var map = L.map('map',{attributionControl: false,zoomControl: false}).setView([24.1618329, 120.6446744], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
