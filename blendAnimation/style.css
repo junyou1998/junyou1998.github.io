@@ -1,0 +1,32 @@
+body {
+    width: 100%;
+    height: 100vh;
+    /* 視窗高 */
+    background-color: yellow;
+    margin: 0;
+
+    /* 置中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    position: absolute;
+    width: 1000px;
+    animation: wave 8s infinite linear;
+    animation-delay: calc(0.35s * var(--i) * -1);
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

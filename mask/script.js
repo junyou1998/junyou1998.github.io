@@ -3,7 +3,7 @@ var userLat, userLong
 let apiUrl = 'https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json?fbclid=IwAR2c7Nn8AHmd6cOhhFvs7bRxNA62G2Dc3F9p7iuPdkZ3-LA3Rea9m-oz2VI'
 
 
-location.href = "https://mask.junyou.tw"
+// location.href = "https://mask.junyou.tw"
 
 var map = L.map('map',{attributionControl: false,zoomControl: false}).setView([24.1618329, 120.6446744], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -63,19 +63,19 @@ function getData(userLat,userLong){
                         L.marker([lat, long], {
                             icon: pinIcon_empty
                         }).addTo(map)
-                        .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://www.google.com.tw/maps/place/${name}">${address}</a><br>更新時間: ${update}`)
+                        .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://maps.google.com/?q=${address}">${address}</a><br>更新時間: ${update}`)
                     }
                     else if( adult+child<50){
                         L.marker([lat, long], {
                             icon: pinIcon_danger
                         }).addTo(map)
-                        .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://www.google.com.tw/maps/place/${name}">${address}</a><br>更新時間: ${update}`)
+                        .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://maps.google.com/?q=${address}">${address}</a><br>更新時間: ${update}`)
                     }
                     else{
                         L.marker([lat, long], {
                             icon: pinIcon
                         }).addTo(map)
-                        .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://www.google.com.tw/maps/place/${name}">${address}</a><br>更新時間: ${update}`)
+                        .bindPopup(`<h4>${name}</h3><br>成人口罩:${adult}<br>小孩口罩${child}<br>地址:<a target="_blank" href="https://maps.google.com/?q=${address}">${address}</a><br>更新時間: ${update}`)
 
                     }
                     
