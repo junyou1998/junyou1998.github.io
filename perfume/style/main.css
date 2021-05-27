@@ -7,7 +7,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'microsoft jhenghei';
+  font-family: "microsoft jhenghei";
 }
 
 a {
@@ -28,6 +28,7 @@ nav .main .container {
   display: -ms-flexbox;
   display: flex;
   height: 56px;
+  position: relative;
 }
 
 nav .main .logo {
@@ -90,6 +91,68 @@ nav .brands .container .brand {
   color: #fff;
   line-height: 52px;
   margin-right: 20px;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav input[type="checkbox"]:checked + .menu_btn + .menu_m {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav input[type="checkbox"]:checked + .menu_btn + .menu_m {
+    display: block;
+  }
+}
+
+nav .menu_btn {
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8D8D8D;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav .menu_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+nav .menu_btn span {
+  font-size: 36px;
+}
+
+nav .menu_m {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 56px;
+  background-color: rgba(255, 0, 0, 0.2);
+  display: none;
+  background-color: #8D8D8D;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav .menu_m .menu {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+nav .menu_m .menu:hover {
+  background-color: #747474;
 }
 
 footer {

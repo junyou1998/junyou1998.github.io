@@ -1,87 +1,136 @@
 @import "variable";
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'microsoft jhenghei';
+    font-family: "microsoft jhenghei";
 }
-a{
+a {
     text-decoration: none;
 }
-.container{
+.container {
     max-width: 1320px;
     margin: 0 auto;
 }
-nav{
+nav {
     width: 100%;
-        .main{ 
-            .container{
-                display: flex;
-                height: 56px;
+    .main {
+        .container {
+            display: flex;
+            height: 56px;
+            position: relative;
+        }
+        .logo {
+            flex: 1;
+            padding: 10px 0;
+            img {
+                height: 100%;
+                vertical-align: middle;
             }
-            .logo{
-                flex: 1;
-                padding: 10px 0;
-                img{
-                    height: 100%;
-                    vertical-align: middle;
-                }
-                @media screen and (max-width: 768px) {
-                    padding: 10px;
-                }
-            }
-            .nav_btn{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0 10px;
-                color: $grey;
-                @media screen and (max-width: 768px) {
-                    display: none;
-                }
+            @media screen and (max-width: 768px) {
+                padding: 10px;
             }
         }
-        .brands{
+        .nav_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            color: $grey;
             @media screen and (max-width: 768px) {
                 display: none;
             }
-            width: 100%;
-            height: 52px;
-            background-color: $main_color;
-            .container{
-                display: flex;
-                .brand{
-                    color: #fff;
-                    line-height: 52px;
-                    margin-right: 20px;
+        }
+    }
+    .brands {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        width: 100%;
+        height: 52px;
+        background-color: $main_color;
+        .container {
+            display: flex;
+            .brand {
+                color: #fff;
+                line-height: 52px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        display: none;
+        &:checked {
+            + .menu_btn {
+                + .menu_m {
+                    display: none;
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                    }
                 }
             }
         }
+    }
+    .menu_btn {
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        color: $grey;
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: flex;
+        }
+        span {
+            font-size: 36px;
+        }
+    }
+    .menu_m {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 56px;
+        background-color: rgba(red, 0.2);
+        display: none;
+        background-color: $grey;
+        transition: .3s;
+
+        .menu{
+            display: block;
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            &:hover{
+                background-color: darken($grey,10);
+            }
+        }
+    }
 }
 
-footer{
+footer {
     width: 100%;
     color: #fff;
     background-color: $main_color;
-    .container{
+    .container {
         display: flex;
         height: 80px;
         align-items: center;
-        .logo{
+        .logo {
             padding: 10px 0;
             @media screen and (max-width: 768px) {
                 padding: 10px;
             }
-            img{
+            img {
                 height: 100%;
             }
         }
-        .right{
+        .right {
             flex: 1;
             font-size: 14px;
             margin-left: 20px;
         }
-        .nav_btn{
+        .nav_btn {
             color: #fff;
             padding: 0 10px;
             @media screen and (max-width: 768px) {
