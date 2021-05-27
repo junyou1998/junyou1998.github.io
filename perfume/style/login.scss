@@ -1,0 +1,89 @@
+@import "variable";
+
+
+.login_page{
+    padding: 70px 0;
+    .container{
+        display: flex;
+        min-height: 800px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            padding: 10px;
+        }
+        .login_image{
+            background-image: url('../images/login.jpg');
+            background-size: cover;
+            background-position: center center;
+            flex: 2;
+            
+        }
+        .login_form{
+            
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0 0 45px;
+            @media screen and (max-width: 768px) {
+                padding: 0 ;
+
+            }
+            .title{
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .input_group{
+                display: flex;
+                flex-direction: column;
+                label{
+                    display: block;
+                    font-size: 16px;
+                    margin: 5px 0;
+                }
+                input{
+                    flex: 1;
+                    border: 1px solid #E0E0E0;
+                    padding: 5px 15px;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                }
+            }
+            .row{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 30px;
+                width: 100%;
+                .forget_password{
+                    color: $main_color;
+                    font-weight: bold;
+                    flex: 1;
+                }
+                .btn{
+                    display: inline-block;
+                    padding: 5px 15px;
+                    background-color: $main_color;
+                    border: solid 1px $main_color;
+                    color: #fff;
+                    border-radius: 3px;
+                    margin-left: 5px;
+                    transition: .3s;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: darken($main_color,5);
+                    }
+                    &.outline_btn{
+                        background-color: #fff;
+                        color: $main_color;
+                        &:hover{
+                            background-color: $main_color;
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
