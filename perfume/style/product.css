@@ -1,0 +1,51 @@
+.material-icons {
+  font-family: 'Material Icons';
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+.container .products {
+  padding: 70px 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .container .products {
+    padding: 10px 0;
+    -ms-grid-columns: (minmax(40%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-gap: 15px;
+  }
+}
+
+.container .products .product .info .product_name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.container .products .product .info .discount {
+  text-decoration: line-through;
+  color: #8D8D8D;
+}
+
+.container .products .product .image {
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .products .product .control {
+  color: #916019;
+  padding: 10px 0 0 0;
+}
+/*# sourceMappingURL=product.css.map */
