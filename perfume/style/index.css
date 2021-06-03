@@ -1,5 +1,5 @@
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
 }
 
 .hero_image {
@@ -54,8 +54,8 @@
   border: 1px solid #fff;
   border-radius: 100px;
   font-size: 24px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hero_image .go_shop:hover {
@@ -189,7 +189,7 @@
 }
 
 .sale {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   padding: 40px 0;
 }
 
@@ -237,12 +237,12 @@
 }
 
 .sale .block .price .discount {
-  color: #8D8D8D;
+  color: #8d8d8d;
   text-decoration: line-through;
 }
 
 .sale .block.soldout .product_image:after {
-  content: 'Sold out';
+  content: "Sold out";
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -263,16 +263,13 @@
 
 .feature {
   padding: 60px 0;
-}
-
-.feature .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 768px) {
-  .feature .container {
+  .feature {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -281,17 +278,17 @@
   }
 }
 
-.feature .container .img {
+.feature .img {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-.feature .container .img img {
+.feature .img img {
   width: 100%;
 }
 
-.feature .container .content {
+.feature .content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -309,25 +306,25 @@
 }
 
 @media screen and (max-width: 768px) {
-  .feature .container .content {
+  .feature .content {
     padding: 0;
   }
 }
 
-.feature .container .content .title {
+.feature .content .title {
   font-weight: bold;
   font-size: 32px;
 }
 
-.feature .container .content .small_title {
+.feature .content .small_title {
   font-size: 20px;
 }
 
-.feature .container .content p {
+.feature .content p {
   font-size: 16px;
 }
 
-.feature .container .content .readmore {
+.feature .content .readmore {
   color: #916019;
   font-size: 16px;
   font-weight: bold;

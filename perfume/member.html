@@ -4,10 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>login</title>
+        <title>product</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="style/main.css" />
-        <link rel="stylesheet" href="style/login.css" />
+        <link rel="stylesheet" href="style/member.css" />
+    
     </head>
     <body>
         <nav>
@@ -23,10 +24,12 @@
                     <a class="nav_btn"><span class="material-icons"> favorite </span>Wishlist</a>
                     <a class="nav_btn"><span class="material-icons"> shopping_cart </span>Cart(3)</a>
 
-                    <input type="checkbox" name="" id="menu_M" />
-
+                    <input type="checkbox" name="" id="menu_M">
+                    
                     <label class="menu_btn" for="menu_M">
-                        <span class="material-icons material-icons-outlined"> menu </span>
+                        <span class="material-icons material-icons-outlined">
+                        menu
+                        </span>
                     </label>
                     <div class="menu_m">
                         <a href="product.html" class="menu">Product</a>
@@ -49,25 +52,52 @@
                 </div>
             </div>
         </nav>
-        <div class="login_page container">
-            <div class="login_image"></div>
-            <form action="" class="login_form">
-                <div class="title">Log in</div>
-                <div class="input_group">
-                    <label for="account">帳號</label>
-                    <input type="text" id="account" placeholder="email@example.com" />
-                </div>
-                <div class="input_group">
-                    <label for="password">密碼</label>
-                    <input type="text" id="password" placeholder="Password" />
-                </div>
+        <div class="member_center container">
+            <div class="menu">
+                <div class="menu_header">會員中心</div>
+                <ul>
+                    <li>會員資料修改</li>
+                    <li>訂單查詢</li> 
+                    <li>退 / 換貨申請</li>    
+                </ul>
+            </div>
+            <div class="info">
+                <div class="member_edit">
+                    <div class="input_group">
+                        <label for="">會員帳號</label>
+                        <div class="account">email@example.com</div>
+                    </div>
+                    <div class="input_group">
+                        <label for="">會員姓名</label>
+                        <input type="text">
+                    </div>
+                    <div class="input_group">
+                        <label for="">會員性別</label>
+                        <select name="" id="">
+                            <option value="0">女</option>
+                            <option value="1">男</option>
+                        </select>
+                    </div>
+                    <div class="input_group">
+                        <label for="">電子信箱</label>
+                        <input type="text" placeholder="email@example.com">
+                    </div>
+                    <div class="input_group">
+                        <label for="">手機號碼</label>
+                        <input type="text">
+                    </div>
 
-                <div class="row">
-                    <a href="" class="forget_password">忘記密碼</a>
-                    <a href="" class="btn outline_btn">註冊</a>
-                    <a href="member.html" class="btn">登入</a>
+                    <div class="input_group">
+                        <label for="">聯絡地址</label>
+                        <div class="input-g">
+                            
+                        </div>
+                    </div>
                 </div>
-            </form>
+                <div class="member_info">
+                    會員編碼 T00020080615
+                </div>
+            </div>
         </div>
         <footer>
             <div class="container">

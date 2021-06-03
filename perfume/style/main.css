@@ -1,5 +1,5 @@
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
 }
 
 body {
@@ -60,7 +60,7 @@ nav .main .nav_btn {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10px;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 
 @media screen and (max-width: 768px) {
@@ -115,7 +115,7 @@ nav .menu_btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #8D8D8D;
+  color: #8d8d8d;
   display: none;
 }
 
@@ -138,9 +138,9 @@ nav .menu_m {
   top: 56px;
   background-color: rgba(255, 0, 0, 0.2);
   display: none;
-  background-color: #8D8D8D;
-  -webkit-transition: .3s;
-  transition: .3s;
+  background-color: #8d8d8d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 nav .menu_m .menu {
@@ -191,7 +191,7 @@ nav .menu_m .menu:hover {
 }
 
 .subscribe .container form .title {
-  color: #8D8D8D;
+  color: #8d8d8d;
   font-size: 32px;
   font-weight: bold;
 }

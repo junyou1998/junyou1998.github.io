@@ -1,0 +1,31 @@
+@import "variable";
+
+.member_center {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    .menu {
+    }
+    .info {
+        display: flex;
+        .member_edit {
+            flex: 2;
+        }
+        .member_info {
+            flex: 1;
+        }
+        .input_group {
+            display: flex;
+            margin-bottom: 15px;
+            color: $grey;
+            label {
+                margin-right: 25px;
+            }
+            input {
+                border: solid 2px #e0e0e0;
+                border-radius: 3px;
+                padding: 5px 10px;
+                min-width: 50%;
+            }
+        }
+    }
+}

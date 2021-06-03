@@ -1,12 +1,9 @@
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
 }
 
 .login_page {
   padding: 70px 0;
-}
-
-.login_page .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +11,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .login_page .container {
+  .login_page {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -23,7 +20,7 @@
   }
 }
 
-.login_page .container .login_image {
+.login_page .login_image {
   background-image: url("../images/login.jpg");
   background-size: cover;
   background-position: center center;
@@ -32,7 +29,7 @@
           flex: 2;
 }
 
-.login_page .container .login_form {
+.login_page .login_form {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -50,18 +47,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .login_page .container .login_form {
+  .login_page .login_form {
     padding: 0;
   }
 }
 
-.login_page .container .login_form .title {
+.login_page .login_form .title {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.login_page .container .login_form .input_group {
+.login_page .login_form .input_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,23 +68,23 @@
           flex-direction: column;
 }
 
-.login_page .container .login_form .input_group label {
+.login_page .login_form .input_group label {
   display: block;
   font-size: 16px;
   margin: 5px 0;
 }
 
-.login_page .container .login_form .input_group input {
+.login_page .login_form .input_group input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   padding: 5px 15px;
   border-radius: 3px;
   margin-bottom: 10px;
 }
 
-.login_page .container .login_form .row {
+.login_page .login_form .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +98,7 @@
   width: 100%;
 }
 
-.login_page .container .login_form .row .forget_password {
+.login_page .login_form .row .forget_password {
   color: #916019;
   font-weight: bold;
   -webkit-box-flex: 1;
@@ -109,7 +106,7 @@
           flex: 1;
 }
 
-.login_page .container .login_form .row .btn {
+.login_page .login_form .row .btn {
   display: inline-block;
   padding: 5px 15px;
   background-color: #916019;
@@ -117,21 +114,21 @@
   color: #fff;
   border-radius: 3px;
   margin-left: 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-.login_page .container .login_form .row .btn:hover {
+.login_page .login_form .row .btn:hover {
   background-color: #7b5215;
 }
 
-.login_page .container .login_form .row .btn.outline_btn {
+.login_page .login_form .row .btn.outline_btn {
   background-color: #fff;
   color: #916019;
 }
 
-.login_page .container .login_form .row .btn.outline_btn:hover {
+.login_page .login_form .row .btn.outline_btn:hover {
   background-color: #916019;
   color: #fff;
 }
