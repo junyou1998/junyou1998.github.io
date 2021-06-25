@@ -3,15 +3,26 @@
 .member_center {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
     .menu {
     }
     .info {
         display: flex;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            padding: 10px;
+        }
         .member_edit {
             flex: 2;
         }
         .member_info {
             flex: 1;
+            @media screen and (max-width: 768px) {
+                order: -1;
+                
+            }
         }
         .input_group {
             display: flex;
@@ -19,13 +30,32 @@
             color: $grey;
             label {
                 margin-right: 25px;
+                width: 80px;
+                flex-shrink: 0;
             }
-            input {
-                border: solid 2px #e0e0e0;
+            input[type="text"] {
+                border: solid 2px $light_grey;
                 border-radius: 3px;
                 padding: 5px 10px;
                 min-width: 50%;
+                &.address{
+                    // min-width: 100%;
+                }
             }
         }
     }
+}
+select{
+    border: solid 2px $light_grey;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: $grey;
+}
+
+.confirm{
+    background: $main_color;
+    color: #fff;
+    padding: 5px 40px;
+    border-radius: 3px;
 }

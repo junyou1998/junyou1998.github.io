@@ -78,7 +78,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #E0E0E0;
   padding: 5px 15px;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -109,7 +109,7 @@
 .login_page .login_form .row .btn {
   display: inline-block;
   padding: 5px 15px;
-  background-color: #916019;
+  background: #916019;
   border: solid 1px #916019;
   color: #fff;
   border-radius: 3px;
@@ -120,16 +120,16 @@
 }
 
 .login_page .login_form .row .btn:hover {
-  background-color: #7b5215;
+  background: #7b5215;
 }
 
 .login_page .login_form .row .btn.outline_btn {
-  background-color: #fff;
+  background: #fff;
   color: #916019;
 }
 
 .login_page .login_form .row .btn.outline_btn:hover {
-  background-color: #916019;
+  background: #916019;
   color: #fff;
 }
 /*# sourceMappingURL=login.css.map */

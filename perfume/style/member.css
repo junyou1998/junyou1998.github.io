@@ -9,10 +9,27 @@
       grid-template-columns: 1fr 4fr;
 }
 
+@media screen and (max-width: 768px) {
+  .member_center {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .member_center .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .member_center .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
 }
 
 .member_center .info .member_edit {
@@ -27,6 +44,14 @@
           flex: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .member_center .info .member_info {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
 .member_center .info .input_group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,12 +62,30 @@
 
 .member_center .info .input_group label {
   margin-right: 25px;
+  width: 80px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.member_center .info .input_group input {
-  border: solid 2px #e0e0e0;
+.member_center .info .input_group input[type="text"] {
+  border: solid 2px #E0E0E0;
   border-radius: 3px;
   padding: 5px 10px;
   min-width: 50%;
+}
+
+select {
+  border: solid 2px #E0E0E0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: #8d8d8d;
+}
+
+.confirm {
+  background: #916019;
+  color: #fff;
+  padding: 5px 40px;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=member.css.map */

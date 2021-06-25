@@ -38,7 +38,7 @@
             }
             input {
                 flex: 1;
-                border: 1px solid #e0e0e0;
+                border: 1px solid $light_grey;
                 padding: 5px 15px;
                 border-radius: 3px;
                 margin-bottom: 10px;
@@ -58,7 +58,7 @@
             .btn {
                 display: inline-block;
                 padding: 5px 15px;
-                background-color: $main_color;
+                background: $main_color;
                 border: solid 1px $main_color;
                 color: #fff;
                 border-radius: 3px;
@@ -66,13 +66,13 @@
                 transition: 0.3s;
                 cursor: pointer;
                 &:hover {
-                    background-color: darken($main_color, 5);
+                    background: darken($main_color, 5);
                 }
                 &.outline_btn {
-                    background-color: #fff;
+                    background: #fff;
                     color: $main_color;
                     &:hover {
-                        background-color: $main_color;
+                        background: $main_color;
                         color: #fff;
                     }
                 }

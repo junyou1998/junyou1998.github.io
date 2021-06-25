@@ -72,7 +72,7 @@ nav .main .nav_btn {
 nav .brands {
   width: 100%;
   height: 52px;
-  background-color: #916019;
+  background: #916019;
 }
 
 @media screen and (max-width: 768px) {
@@ -136,9 +136,9 @@ nav .menu_m {
   position: absolute;
   left: 0;
   top: 56px;
-  background-color: rgba(255, 0, 0, 0.2);
+  background: rgba(255, 0, 0, 0.2);
   display: none;
-  background-color: #8d8d8d;
+  background: #8d8d8d;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -152,7 +152,7 @@ nav .menu_m .menu {
 }
 
 nav .menu_m .menu:hover {
-  background-color: #747474;
+  background: #747474;
 }
 
 .subscribe {
@@ -227,7 +227,7 @@ nav .menu_m .menu:hover {
 
 .subscribe .container form .input_group button {
   border: none;
-  background-color: #916019;
+  background: #916019;
   border: 2px solid #916019;
   padding: 0 20px;
   color: #fff;
@@ -237,7 +237,7 @@ nav .menu_m .menu:hover {
 footer {
   width: 100%;
   color: #fff;
-  background-color: #916019;
+  background: #916019;
 }
 
 footer .container {
